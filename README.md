@@ -1,17 +1,32 @@
-# @unction/tempLate
+# @unction/mapKeysWithValueKey
+
 
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> mixed
+> (ValueType => KeyType => KeyType) -> IterableType -> IterableType
 
-An example function.
+Map over keys with the context of the value and key.
 
 ``` javascript
-tempLate(1) // 1
+const attributes = {
+  name: "Kurtis Rainbolt-Greene",
+  createdAt: new Date()
+}
+
+mapKeys((value) => (key) => )(attributes)
 ```
 
-[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+Would return:
+
+``` javascript
+{
+  name: "Kurtis Rainbolt-Greene",
+  "created-at": new Date()
+}
+```
+
+[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/mapKeysWithValueKey.svg?maxAge=2592000&style=flat-square
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
-[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/mapKeysWithValueKey.svg?maxAge=2592000&style=flat-square
