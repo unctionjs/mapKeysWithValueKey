@@ -2,7 +2,7 @@
 import {same} from "tap"
 import {replace} from "ramda"
 
-import mapKeysWithValueKey from "./source.js"
+import mapKeys from "./source"
 
 same(
   mapKeysWithValueKey(
