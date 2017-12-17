@@ -1,4 +1,4 @@
-/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
+/* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, flowtype/require-variable-type */
 import {test} from "tap"
 
 import mapKeysWithValueKey from "./index"
@@ -28,13 +28,13 @@ test("Map", ({same, end}) => {
       (value) => (key) => upcase(key + value)
     )(
       new Map([
-        ["newlabel", "1"],
-        ["newlabel", "2"],
+        ["newLabel", "1"],
+        ["newValue", "2"],
       ])
     ),
     new Map([
       ["NEWLABEL1", "1"],
-      ["NEWLABEL2", "2"],
+      ["NEWVALUE2", "2"],
     ])
   )
 
