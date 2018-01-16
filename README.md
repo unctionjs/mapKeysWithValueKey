@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (ValueType -> KeyType -> KeyType) -> FunctorType -> FunctorType
+> (ValueType => KeyType => KeyType) => FunctorType => FunctorType
 
 Map over keys with the context of the value and key.
 
