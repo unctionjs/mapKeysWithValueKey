@@ -1,9 +1,9 @@
 /* eslint-disable flowtype/require-variable-type */
-import {test} from "tap"
+import {test} from "tap";
 
-import mapKeysWithValueKey from "./index"
+import mapKeysWithValueKey from "./index";
 
-const upcase = (value) => value.toUpperCase()
+const upcase = (value) => value.toUpperCase();
 
 test("Object", ({same, end}) => {
   same(
@@ -17,10 +17,10 @@ test("Object", ({same, end}) => {
       NEWLABEL1: "1",
       NEWVALUE2: "2",
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test("Map", ({same, end}) => {
   same(
@@ -36,7 +36,7 @@ test("Map", ({same, end}) => {
       ["NEWLABEL1", "1"],
       ["NEWVALUE2", "2"],
     ])
-  )
+  );
 
-  end()
-})
+  end();
+});
