@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-variable-type */
 import {test} from "tap";
 
-import mapKeysWithValueKey from "./index";
+import mapKeysWithValueKey from "./";
 
 const upcase = (value) => value.toUpperCase();
 
