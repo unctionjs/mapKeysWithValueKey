@@ -4,7 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (ValueType => KeyType => KeyType) => FunctorType => FunctorType
+> MapperFunctionType<A, MapperFunctionType<B, C>> =>
+>   KeyedEnumerableType<B, A> =>
+>     KeyedEnumerableType<B, C>
 
 Map over keys with the context of the value and key.
 
