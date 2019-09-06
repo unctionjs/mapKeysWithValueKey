@@ -1,5 +1,5 @@
 /* eslint-disable flowtype/require-variable-type */
-import mapKeysWithValueKey from "./index.ts";
+import mapKeysWithValueKey from "./index";
 
 const upcase = (value) => value.toUpperCase();
 
