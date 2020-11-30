@@ -6,7 +6,7 @@
 
 > MapperFunctionType<A, MapperFunctionType<B, C>> =>
 >   Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string =>
->     KeyedEnumerableType<B, C>
+>     Array<B> | Set<B> | Record<string | number | symbol, B> | Map<C, B> | string
 
 Map over keys with the context of the value and key.
 
